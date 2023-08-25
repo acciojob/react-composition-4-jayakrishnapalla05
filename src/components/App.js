@@ -15,9 +15,9 @@ const App = () => {
           <label htmlFor="">Name</label>
           <input type="text" onChange={(e)=>setvalues({...values,name:e.target.value})}/>
           <label htmlFor="">Email</label>
-          <input type="text" onChange={(e)=>setvalues({...values,email:e.target.value})}/>
+          <input type="email" onChange={(e)=>setvalues({...values,email:e.target.value})}/>
           <label htmlFor="">Password</label>
-          <input type="text" onChange={(e)=>setvalues({...values,password:e.target.value})}/>
+          <input type="password" onChange={(e)=>setvalues({...values,password:e.target.value})}/>
 
 
           <button onSubmit={(e)=>{console.log(values);}}>Submit</button>
